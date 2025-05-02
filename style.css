@@ -61,14 +61,20 @@ ul{
 .sideTabListItem{
   margin-bottom: 5px;
   display: grid;
-  grid-template-columns: 0.5fr 1.7fr;
+  padding-top:1px;
+  grid-template-columns: 0.5fr 1fr;
 }
+
 
 .svgIcon{
   filter: brightness(0) invert(1);
   width:20px;
   justify-content: center;
   grid-column: 1/2;
+}
+
+#homeSVGIcon{
+  margin-top: 1.5px;
 }
 
 .sideTabListGeneral{
