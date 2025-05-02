@@ -8,11 +8,6 @@
   src: url("fonts/Roboto-Regular.ttf") format("opentype");
 }
 
-.svgIcon{
-  filter: brightness(0) invert(1);
-  width:20px;
-  justify-content: center;
-}
 
 
 ul{
@@ -44,12 +39,13 @@ ul{
   align-self: center;
   justify-content: space-around;
   font-size: 20px;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 #dashboardTitle{
   justify-self: end;
   margin-top:5px;
+  margin-bottom: 5px;
   padding-left: 5px;
 }
 
@@ -58,15 +54,26 @@ ul{
 }
 
 .sideTabListWrapper{
-  justify-items: start;
   position: relative;
   left: -1.4em;
 }
 
 .sideTabListItem{
   margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 0.5fr 1.7fr;
 }
 
+.svgIcon{
+  filter: brightness(0) invert(1);
+  width:20px;
+  justify-content: center;
+  grid-column: 1/2;
+}
+
+.sideTabListGeneral{
+  margin-top: 3em;
+}
 
 /*Header with PFP and Search Bar*/
 .header{
