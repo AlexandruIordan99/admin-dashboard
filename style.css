@@ -1,0 +1,69 @@
+.html, .body{
+  font-family: Roboto, sans-serif;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("fonts/Roboto-Regular.ttf") format("opentype");
+}
+
+ul{
+  list-style-type: none;
+}
+
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto 1fr 1fr;
+
+}
+
+.sideTab{
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.header{
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.contentContainer{
+  display: grid;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 1fr 6fr;
+  justify-content: start;
+  justify-items: start;
+  align-items: start;
+
+}
+
+#projectListTitle{
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.projectList{
+  display: grid;
+  grid-gap: 15px;
+  grid-row: 2;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+}
+
+.announcementDiv{
+
+  display: grid;
+  grid-column: 3/3;
+  grid-row: 2/3;
+}
+
+.trendingList{
+  display: grid;
+  grid-column:3/3;
+  grid-row: 3/4;
+}
