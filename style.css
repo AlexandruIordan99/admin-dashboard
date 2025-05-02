@@ -57,19 +57,15 @@ ul{
   width: 26px;
 }
 
-.sideTabListPersonal{
+.sideTabListWrapper{
   justify-items: start;
-  align-self: start;
-  justify-content: start;
+  position: relative;
+  left: -1.4em;
 }
 
-.sideTabListGeneral{
-  justify-items: start;
-  align-self: start;
-  justify-content: start;
+.sideTabListItem{
+  margin-bottom: 5px;
 }
-
-
 
 
 /*Header with PFP and Search Bar*/
