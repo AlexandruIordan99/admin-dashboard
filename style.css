@@ -215,7 +215,6 @@ button{
   grid-row: 2/3;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 0.2fr repeat(auto-fit, minmax(100px, 1fr));
-  border: 3px solid red;
   background-color: #dee7f1;
   gap: 10px;
 }
@@ -250,17 +249,33 @@ button{
 
 
 .projectCard{
+  display: flex;
+  flex-direction: column;
   background-color: white;
+  width: 100%;
+  justify-content: space-between;
 }
 
+.projectCardSymbols{
+  display: flex;
+  justify-content: end;
+}
+
+.svgIconProjectCard{
+  filter: brightness(1) invert(0);
+  width:20px;
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  justify-self: flex-end;
+}
 
 .contentContainerRightSide{
   display: grid;
   grid-column: 2;
   grid-row: 1/5;
-  justify-content: start;
   border: 3px solid blue;
-  grid-template-rows: 1fr 1fr
+  grid-template-rows: 1fr 1fr;
 }
 
 
