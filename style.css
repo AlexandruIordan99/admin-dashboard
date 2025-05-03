@@ -24,6 +24,12 @@ ul{
   font-family: Roboto, sans-serif;
 }
 
+.svgIcon{
+  filter: brightness(0) invert(1);
+  width:20px;
+  justify-content: center;
+  grid-column: 1/2;
+}
 
 /*Side Tab*/
 .sideTab{
@@ -36,6 +42,8 @@ ul{
   background-color: #03A9F4;
   color: white;
 }
+
+
 
 #dashboardTitleSection{
   display: flex;
@@ -68,14 +76,6 @@ ul{
   grid-template-columns: 0.5fr 1fr;
 }
 
-
-.svgIcon{
-  filter: brightness(0) invert(1);
-  width:20px;
-  justify-content: center;
-  grid-column: 1/2;
-}
-
 #homeSVGIcon{
   margin-top: 1.5px;
 }
@@ -94,12 +94,33 @@ ul{
   grid-column: 2/3;
   border: 3px solid green;
   grid-template-columns: 0.75fr 0.25fr;
-  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 
-#searchBar{
+#searchBarDiv{
+  display: grid;
   grid-column: 1/2;
+  grid-template-columns: 0.25fr 4fr;
+  justify-items: start;
+}
+
+#searchIcon{
+  filter: brightness(1) invert(0);
+  margin-left:0.6em;
+  margin-top: 0.3em;
+}
+
+.formElement{
+  border: none;
+
+}
+
+#searchBar{
+  justify-self: start;
+  border-radius: 1em;
+  width: 30em;
+  background-color:#d8d8d8;
 }
 
 .profileSmall{
